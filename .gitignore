@@ -1,0 +1,58 @@
+# IDE & System
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+/.eclipse/
+.settings/
+*.prefs
+out/
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Gradle & Java
+.gradle/
+build/
+**/build/
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
+*.class
+*.log
+hs_err_pid*
+
+# Minecraft Modding Specific
+/runs/
+/runs/client
+/runs/server
+/repo/
+
+# Node / Docusaurus
+node_modules/
+docs/generated/
+docs/.docusaurus/
+docs/build/
+
+# Temporary & OS Junk
+*~
+*.stackdump
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+._*
+*.rdc
+.intellijPlatform/*
+
+# Compiled Artifacts
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+opencode.json
+StatisticsSnapshot.csv

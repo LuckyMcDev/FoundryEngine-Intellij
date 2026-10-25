@@ -1,0 +1,25 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>de.luckymcdev.foundryengine.intellij</id>
+    <name>FoundryEngine Integration</name>
+    <vendor url="https://github.com/LuckyMcDev">LuckyMcDev</vendor>
+
+    <description><![CDATA[
+        Tooling for FoundryEngine script bundles: instance detection, mod classpath, build and deploy.
+        ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.gradle</depends>
+
+    <resource-bundle>messages.FoundryBundle</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="FoundryEngine"
+                    anchor="right"
+                    factoryClass="de.luckymcdev.foundryengine.intellij.FoundryToolWindowFactory"
+                    icon="de.luckymcdev.foundryengine.intellij.FoundryIcons.ToolWindowIcon"/>
+        <notificationGroup id="FoundryEngine"
+                           displayType="BALLOON"
+                           key="notification.group.foundryengine"/>
+    </extensions>
+</idea-plugin>
