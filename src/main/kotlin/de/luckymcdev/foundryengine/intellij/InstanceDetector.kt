@@ -21,7 +21,7 @@ object InstanceDetector {
 
     fun isEngineJar(fileName: String): Boolean {
         val n = fileName.lowercase(Locale.ROOT)
-        return n.endsWith(".jar") && "foundryengine" in n
+        return n.endsWith(".jar") && n.contains("foundryengine")
     }
 
     fun detect(projectDir: Path): List<Candidate> {
